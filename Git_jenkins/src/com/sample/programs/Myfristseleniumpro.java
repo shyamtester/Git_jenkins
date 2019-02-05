@@ -2,10 +2,12 @@ package com.sample.programs;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
 public class Myfristseleniumpro {
-public static void main(String[] args) {
-	System.setProperty("webdriver.firefox.marionette", "D:\\shyam\\set ups\\geckodriver.exe");
+	@Test
+public void testA(){
+	System.setProperty("webdriver.firefox.marionette", "C:\\Users\\jobs\\git\\repository3\\Git_jenkins\\drivers\\geckodriver.exe");
 	WebDriver driver = new FirefoxDriver();
 	driver.manage().window().maximize();
 	System.out.println("browser should be opened");
